@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Site uses a sans-serif font */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #120323;
+    color: #97bf04;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Logo and company name on separate lines */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    max-width: 150px;
+}
+
+/* All content in one column */
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 25px;
+}
+
+/* Puffin image centred and 100% width of page */
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Image frame colour */
+figure img {
+    border: 0.2em solid #d9043d;
+}
+
+/* Name of animal colour */
+h2 {
+    color: #120323;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* Sidebar background colour */
+aside {
+    background-color: #97bf04;
+    padding: 15px;
+}
+
+/* Footer background colour*/
+footer {
+    background-color: #d9043d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Logo and company name on the same line */
+    .header-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Puffin image no wider than 300px */
+    figure img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    /* Puffin image and caption displayed next to each other */
+    figure {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    /* 3 column layout with sidebar on right */
+    #container {
+        flex-direction: row;
+    }
+    main {
+        flex: 4;
+    }
+    aside {
+        flex: 1;
+    }
+}
