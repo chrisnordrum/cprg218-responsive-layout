@@ -47,7 +47,7 @@ figure {
 
 /* Image frame colour */
 figure img {
-    border: 0.2em solid #d9043d;
+    border: 5px solid #d9043d;
 }
 
 /* Name of animal colour */
