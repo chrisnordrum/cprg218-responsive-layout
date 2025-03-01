@@ -33,6 +33,7 @@ header img {
 #container {
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
 }
 
 main {
